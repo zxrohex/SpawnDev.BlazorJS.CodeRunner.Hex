@@ -1,7 +1,7 @@
 ﻿namespace SpawnDev.BlazorJS.CodeRunner
 {
-    using System.Collections.Generic;
     using Microsoft.AspNetCore.Razor.Language;
+    using System.Collections.Generic;
 
     internal class CompileToCSharpResult
     {

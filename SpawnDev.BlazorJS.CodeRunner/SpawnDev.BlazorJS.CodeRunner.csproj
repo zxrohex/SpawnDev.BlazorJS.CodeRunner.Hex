@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<Version>1.0.0</Version>
+		<Version>2.0.0-rc.1</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<EmbedAllSources>true</EmbedAllSources>
@@ -26,13 +26,17 @@
 	
 	<PropertyGroup>
 		<!-- 
-			Add dotnet/aspnetcore dotnet-tools package source
-			This is required to get Microsoft.CodeAnalysis.CSharp and others
+			The below RestoreAdditionalProjectSources tag is required to get 
+			Microsoft.CodeAnalysis.CSharp and related packages for compiling.
+		    CodeRunner uses some Microsoft packages that they do not publish 
+			on the default Nuget source. The package source they use is added 
+			via RestoreAdditionalProjectSources here. Package link source: 
 			https://github.com/dotnet/aspnetcore/blob/main/NuGet.config
 		-->
 		<RestoreAdditionalProjectSources>
 			https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json;
 		</RestoreAdditionalProjectSources>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -42,19 +46,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="MetadataReferenceService.BlazorWasm" Version="0.0.1" />
 		<PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.13.0" />
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Features" Version="4.13.0" />
 		<PackageReference Include="Microsoft.CodeAnalysis.Razor" Version="6.0.36" />
 	</ItemGroup>
 
-	<ItemGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.1" />
-	</ItemGroup>
-
-	<ItemGroup Condition=" '$(TargetFramework)' == 'net9.0' ">
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0" />
+	<ItemGroup>
+	  <ProjectReference Include="..\MetadataReferenceService.BlazorWasm\MetadataReferenceService.BlazorWasm.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

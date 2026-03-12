@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!--<TargetFrameworks>$(TargetFrameworkForNETCoreTasks);$(TargetFrameworkForNETFrameworkTasks)</TargetFrameworks>-->
+		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+		<Langversion>latest</Langversion>
+		<Description>Abstractions for modifying .NET webcil binary images</Description>
+		<EnableDefaultItems>true</EnableDefaultItems>
+		<Nullable>enable</Nullable>
+		<IncludeSymbols>true</IncludeSymbols>
+		<Serviceable>true</Serviceable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<IsShipping>true</IsShipping>
+		<!-- this assembly should not produce a public package, rather it's meant to be shipped by the
+          WasmAppBuilder task and the BrowserDebugProxy -->
+		<IsShippingPackage>false</IsShippingPackage>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="IsExternalInit" Version="1.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+
+
+
+
+	<!-- 
+	
+	
+	<ItemGroup>
+		<PackageReference Include="IsExternalInit" Version="1.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="System.Memory" Version="4.6.3" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
+		<PackageReference Include="System.Reflection.Metadata" Version="8.0.0" />
+		<PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net9.0' ">
+		<PackageReference Include="System.Reflection.Metadata" Version="9.0.0" />
+		<PackageReference Include="System.Collections.Immutable" Version="9.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net10.0' ">
+		<PackageReference Include="System.Reflection.Metadata" Version="10.0.0" />
+		<PackageReference Include="System.Collections.Immutable" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
+		<PackageReference Include="System.ValueTuple" Version="4.6.2" />
+	</ItemGroup>
+	
+	
+	-->
+
+	<!--<ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
+    <Compile Include="$(CoreLibSharedDir)System\Diagnostics\CodeAnalysis\NullableAttributes.cs" Link="System\Diagnostics\CodeAnalysis\NullableAttributes.cs" />
+    <Compile Include="..\Common\IsExternalInit.cs" />
+  </ItemGroup>-->
+
+</Project>

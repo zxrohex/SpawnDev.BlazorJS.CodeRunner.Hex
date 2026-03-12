@@ -1,7 +1,7 @@
 namespace SpawnDev.BlazorJS.CodeRunner
 {
-    using System.IO;
     using Microsoft.AspNetCore.Razor.Language;
+    using System.IO;
 
     internal class VirtualProjectItem : RazorProjectItem
     {

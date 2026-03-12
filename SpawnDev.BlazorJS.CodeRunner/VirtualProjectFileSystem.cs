@@ -1,8 +1,8 @@
 namespace SpawnDev.BlazorJS.CodeRunner
 {
+    using Microsoft.AspNetCore.Razor.Language;
     using System.Collections.Generic;
     using System.Linq;
-    using Microsoft.AspNetCore.Razor.Language;
 
     internal class VirtualRazorProjectFileSystem : RazorProjectFileSystem
     {

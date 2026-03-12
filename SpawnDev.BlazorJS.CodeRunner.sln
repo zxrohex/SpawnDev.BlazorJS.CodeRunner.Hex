@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.35806.103
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11408.102 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpawnDev.BlazorJS.CodeRunner", "SpawnDev.BlazorJS.CodeRunner\SpawnDev.BlazorJS.CodeRunner.csproj", "{10362DEE-B6A3-426C-A0BB-ABC88F0DA8B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpawnDev.BlazorJS.CodeRunner.Demo", "SpawnDev.BlazorJS.CodeRunner.Demo\SpawnDev.BlazorJS.CodeRunner.Demo.csproj", "{74353D80-3B56-474B-9A9F-287458437149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataReferenceService.BlazorWasm", "MetadataReferenceService.BlazorWasm\MetadataReferenceService.BlazorWasm.csproj", "{0005692E-5DFC-8CAD-2A93-50820C0F7466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataReferenceService.Abstractions", "MetadataReferenceService.Abstractions\MetadataReferenceService.Abstractions.csproj", "{01997BAE-22D0-FC6D-D8A7-7CAEA8A56BBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.NET.WebAssembly.Webcil", "Microsoft.NET.WebAssembly.Webcil\Microsoft.NET.WebAssembly.Webcil.csproj", "{22630FBA-216A-CF6B-7C4B-C7BFA711AE5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{74353D80-3B56-474B-9A9F-287458437149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74353D80-3B56-474B-9A9F-287458437149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74353D80-3B56-474B-9A9F-287458437149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0005692E-5DFC-8CAD-2A93-50820C0F7466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0005692E-5DFC-8CAD-2A93-50820C0F7466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0005692E-5DFC-8CAD-2A93-50820C0F7466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0005692E-5DFC-8CAD-2A93-50820C0F7466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01997BAE-22D0-FC6D-D8A7-7CAEA8A56BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01997BAE-22D0-FC6D-D8A7-7CAEA8A56BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01997BAE-22D0-FC6D-D8A7-7CAEA8A56BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01997BAE-22D0-FC6D-D8A7-7CAEA8A56BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22630FBA-216A-CF6B-7C4B-C7BFA711AE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22630FBA-216A-CF6B-7C4B-C7BFA711AE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22630FBA-216A-CF6B-7C4B-C7BFA711AE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22630FBA-216A-CF6B-7C4B-C7BFA711AE5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

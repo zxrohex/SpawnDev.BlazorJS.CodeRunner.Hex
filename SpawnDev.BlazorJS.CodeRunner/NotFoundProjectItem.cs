@@ -1,8 +1,8 @@
 ﻿namespace SpawnDev.BlazorJS.CodeRunner
 {
+    using Microsoft.AspNetCore.Razor.Language;
     using System;
     using System.IO;
-    using Microsoft.AspNetCore.Razor.Language;
 
     internal class NotFoundProjectItem : RazorProjectItem
     {

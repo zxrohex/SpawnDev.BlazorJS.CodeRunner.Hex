@@ -18,6 +18,8 @@ if (JS.IsWindow)
     builder.RootComponents.Add<HeadOutlet>("head::after");
 }
 
+
+
 builder.Services.AddRadzenComponents();
 builder.Services.AddScoped<AppTrayService>();
 builder.Services.AddScoped<MainLayoutService>();

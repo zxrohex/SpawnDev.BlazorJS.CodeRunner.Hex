@@ -1,8 +1,8 @@
 ﻿namespace SpawnDev.BlazorJS.CodeRunner
 {
+    using Microsoft.CodeAnalysis;
     using System.Collections.Generic;
     using System.Reflection;
-    using Microsoft.CodeAnalysis;
 
     public class CompileToAssemblyResult
     {

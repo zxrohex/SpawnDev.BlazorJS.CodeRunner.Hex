@@ -1,8 +1,8 @@
 ﻿namespace SpawnDev.BlazorJS.CodeRunner
 {
-    using System.IO;
     using Microsoft.AspNetCore.Razor.Language;
     using Microsoft.CodeAnalysis;
+    using System.IO;
 
     public class CompilationDiagnostic
     {
