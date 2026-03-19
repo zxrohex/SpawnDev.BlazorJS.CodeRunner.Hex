@@ -1,12 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+		<TargetFrameworks>net10.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<Langversion>latest</Langversion>
 		<PackageTags>MetadataReference;CodeAnalysis;Interface</PackageTags>
 		<Description>This package defines the IMetadataReferenceService interface.</Description>
+		<AssemblyVersion>1.0.0.1</AssemblyVersion>
+		<FileVersion>1.0.0.1</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>

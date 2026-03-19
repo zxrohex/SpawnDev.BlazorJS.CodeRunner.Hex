@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<!--<TargetFrameworks>$(TargetFrameworkForNETCoreTasks);$(TargetFrameworkForNETFrameworkTasks)</TargetFrameworks>-->
-		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+		<TargetFrameworks>net10.0</TargetFrameworks>
 		<Langversion>latest</Langversion>
 		<Description>Abstractions for modifying .NET webcil binary images</Description>
 		<EnableDefaultItems>true</EnableDefaultItems>
@@ -14,6 +14,8 @@
 		<!-- this assembly should not produce a public package, rather it's meant to be shipped by the
           WasmAppBuilder task and the BrowserDebugProxy -->
 		<IsShippingPackage>false</IsShippingPackage>
+		<AssemblyVersion>1.0.0.1</AssemblyVersion>
+		<FileVersion>1.0.0.1</FileVersion>
 	</PropertyGroup>
 
 
