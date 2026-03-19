@@ -37,8 +37,8 @@
 			https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json;
 		</RestoreAdditionalProjectSources>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-		<AssemblyVersion>2.0.0.3</AssemblyVersion>
-		<FileVersion>2.0.0.3</FileVersion>
+		<AssemblyVersion>2.0.0.4</AssemblyVersion>
+		<FileVersion>2.0.0.4</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
