@@ -43,9 +43,9 @@
     }
     public class CompilationService
     {
-        public const string DefaultRootNamespace = $"SpawnDev.UserComponents";
+        public const string DefaultRootNamespace = $"CodeRunner.UserComponents";
 
-        private const string WorkingDirectory = "/TryMudBlazor/";
+        private const string WorkingDirectory = "/CodeRunner/";
         private static readonly string[] DefaultImports =
         [
             "@using System.ComponentModel.DataAnnotations",
